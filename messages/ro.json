@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "EduArena – Teren de fotbal indoor",
+    "description": "Rezervă online terenul de fotbal indoor EduArena. Alege ziua, ora și durata – confirmare pe email."
+  },
+  "nav": {
+    "home": "Acasă",
+    "gallery": "Galerie",
+    "book": "Rezervă",
+    "contact": "Contact",
+    "language": "Limba"
+  },
+  "home": {
+    "eyebrow": "Teren de fotbal indoor",
+    "title": "Joacă oricând.\nPloaia nu mai contează.",
+    "subtitle": "Teren acoperit, gazon sintetic nou, nocturnă LED și vestiare. Alege ziua și ora, rezervi în 1 minut.",
+    "ctaBook": "Rezervă terenul",
+    "ctaGallery": "Vezi locația",
+    "fromPrice": "de la {price} / oră",
+    "featuresTitle": "Tot ce-ți trebuie pentru un meci bun",
+    "f1t": "Gazon sintetic premium",
+    "f1d": "Suprafață nouă, prietenoasă cu articulațiile, bună pentru crampoane scurte.",
+    "f2t": "Acoperit, tot anul",
+    "f2d": "Joci pe vânt, ploaie sau zăpadă. Iarna e încălzit.",
+    "f3t": "Vestiare și dușuri",
+    "f3d": "Vestiare curate, dușuri cu apă caldă și dulapuri.",
+    "f4t": "Rezervare online",
+    "f4d": "Vezi în timp real ce ore sunt libere și rezervi direct de pe telefon.",
+    "howTitle": "Cum rezervi",
+    "how1t": "Alege ziua",
+    "how1d": "Vezi disponibilitatea pentru următoarele 30 de zile.",
+    "how2t": "Alege ora și durata",
+    "how2d": "Minim 1 oră, apoi în pași de 30 de minute.",
+    "how3t": "Confirmă pe email",
+    "how3d": "Primești un link de confirmare. Plata se face la teren.",
+    "galleryTitle": "Aruncă o privire",
+    "galleryAll": "Toată galeria",
+    "findUs": "Unde ne găsești",
+    "callUs": "Preferi telefonul? Sună-ne"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Terenul, vestiarele și zona de relaxare. Apasă pe o poză pentru a o mări."
+  },
+  "book": {
+    "title": "Rezervă terenul",
+    "subtitle": "Alege ziua, ora de start și cât vrei să joci.",
+    "step1": "Ziua",
+    "step2": "Ora de start",
+    "step3": "Durata",
+    "step4": "Datele tale",
+    "today": "Azi",
+    "tomorrow": "Mâine",
+    "closed": "Închis în această zi.",
+    "noSlots": "Nu mai sunt ore libere în această zi. Încearcă altă zi.",
+    "loading": "Se încarcă…",
+    "pickTimeFirst": "Alege mai întâi ora de start.",
+    "until": "până la {time}",
+    "legendFree": "Liber",
+    "legendTaken": "Ocupat",
+    "name": "Nume și prenume",
+    "email": "Email",
+    "emailHint": "Îți trimitem linkul de confirmare aici.",
+    "phone": "Telefon",
+    "note": "Mesaj (opțional)",
+    "notePlaceholder": "Ex: suntem 10 jucători, avem nevoie de veste",
+    "summary": "Rezumat",
+    "total": "Total estimat",
+    "payOnSite": "Plata se face la teren, cash sau card.",
+    "submit": "Rezervă",
+    "submitting": "Se trimite…",
+    "successTitle": "Verifică-ți emailul! 📩",
+    "successText": "Ți-am trimis un link de confirmare la {email}. Rezervarea devine finală doar după ce apeși pe link. Ținem terenul pentru tine {minutes} de minute.",
+    "successAgain": "Fă altă rezervare",
+    "errors": {
+      "INVALID": "Verifică datele introduse (nume, email, telefon).",
+      "SLOT_TAKEN": "Ne pare rău, intervalul tocmai a fost ocupat. Alege altă oră.",
+      "OUT_OF_RANGE": "Data aleasă nu este disponibilă pentru rezervare.",
+      "TOO_MANY_ACTIVE": "Ai deja numărul maxim de rezervări active. Pentru mai multe, sună-ne.",
+      "RATE_LIMITED": "Prea multe încercări. Încearcă din nou peste o oră sau sună-ne.",
+      "CAPTCHA": "Verificarea anti-robot a eșuat. Reîncarcă pagina și încearcă din nou.",
+      "UNKNOWN": "A apărut o eroare. Încearcă din nou."
+    }
+  },
+  "confirm": {
+    "CONFIRMED": "Rezervare confirmată!",
+    "CONFIRMED_text": "Te așteptăm pe teren. Ți-am trimis un email cu detaliile și un link de anulare.",
+    "ALREADY": "Rezervarea era deja confirmată",
+    "ALREADY_text": "Totul este în regulă, te așteptăm.",
+    "EXPIRED": "Linkul a expirat",
+    "EXPIRED_text": "Rezervarea nu a fost confirmată la timp și intervalul a fost eliberat. Poți face o rezervare nouă.",
+    "NOT_FOUND": "Link invalid",
+    "NOT_FOUND_text": "Nu am găsit această rezervare.",
+    "backHome": "Înapoi acasă",
+    "bookAgain": "Rezervă din nou"
+  },
+  "cancel": {
+    "title": "Anulează rezervarea",
+    "question": "Sigur vrei să anulezi această rezervare?",
+    "confirmBtn": "Da, anulează",
+    "keep": "Nu, păstrează",
+    "CANCELLED": "Rezervarea a fost anulată",
+    "CANCELLED_text": "Intervalul a fost eliberat. Sperăm să te vedem altă dată!",
+    "ALREADY": "Rezervarea era deja anulată",
+    "PAST": "Rezervarea a trecut și nu mai poate fi anulată.",
+    "NOT_FOUND": "Link invalid sau rezervare inexistentă."
+  },
+  "footer": {
+    "rights": "Toate drepturile rezervate.",
+    "hours": "Program",
+    "everyDay": "Zilnic"
+  },
+  "days": {
+    "0": "Duminică",
+    "1": "Luni",
+    "2": "Marți",
+    "3": "Miercuri",
+    "4": "Joi",
+    "5": "Vineri",
+    "6": "Sâmbătă"
+  }
+}

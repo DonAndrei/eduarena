@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EduArena — indoor football pitch booking
 
-## Getting Started
+Next.js 15 + Prisma/Postgres. Bilingual (RO default, EN). Customers pick day → start time (30-min grid) → duration (1h, 1.5h, 2h…) → confirm by email. Owner admin at `/admin`.
 
-First, run the development server:
-
+## Run locally
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run db:dev          # local Postgres (no Docker needed)
+npx prisma migrate dev  # create tables
+npm run dev             # http://localhost:3000
 ```
+`.env` is preconfigured for local dev. Emails are printed to the server console (no `RESEND_API_KEY`). Admin password: `ADMIN_PASSWORD` in `.env`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Anti-spam (no online payment yet)
+- Booking is `PENDING` until the customer clicks the email link; unconfirmed ones expire after `pendingHoldMinutes` (30) and free the slot.
+- Cloudflare Turnstile captcha + hidden honeypot field.
+- Max active bookings per email/phone (default 2), max 8 attempts/hour per IP.
+- Postgres exclusion constraint `Booking_no_overlap` makes double-booking impossible.
+- Owner can cancel anything from admin. Stripe deposit can later be added as a step before `CONFIRMED`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Admin (`/admin`)
+Day view + timeline, upcoming 14 days, cancel/confirm, add phone bookings, block intervals, settings (hours per weekday, price/hour, max duration, booking window, hold time, per-person limit).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Content to replace
+- `src/content/venue.ts` — phone, address, email, social links, gallery list
+- `public/gallery/` — real photos (placeholders are SVGs)
+- `messages/ro.json`, `messages/en.json` — all site texts
 
-## Learn More
+## Deploy (Vercel + Neon/Supabase)
+1. Create Postgres DB, set env vars from `.env.example` in Vercel.
+2. `npm run db:migrate` against prod DB (or add to build).
+3. Resend: verify domain, set `RESEND_API_KEY`, `EMAIL_FROM`, `OWNER_EMAIL`.
+4. Turnstile: create site, set real keys (dev uses Cloudflare test keys).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Checks
+```bash
+npm test                         # slot logic unit tests
+npx tsx scripts/check-overlap.ts # DB rejects overlapping bookings
+```

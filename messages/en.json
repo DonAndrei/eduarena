@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "title": "EduArena – Indoor football pitch",
+    "description": "Book the EduArena indoor football pitch online. Pick a day, time and duration – confirmation by email."
+  },
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "book": "Book",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "eyebrow": "Indoor football pitch",
+    "title": "Play anytime.\nRain doesn't matter anymore.",
+    "subtitle": "Covered pitch, brand-new artificial turf, LED floodlights and changing rooms. Pick a day and time, book in a minute.",
+    "ctaBook": "Book the pitch",
+    "ctaGallery": "See the venue",
+    "fromPrice": "from {price} / hour",
+    "featuresTitle": "Everything you need for a good game",
+    "f1t": "Premium artificial turf",
+    "f1d": "New, joint-friendly surface, great for short studs.",
+    "f2t": "Covered, all year",
+    "f2d": "Play in wind, rain or snow. Heated in winter.",
+    "f3t": "Changing rooms & showers",
+    "f3d": "Clean changing rooms, hot showers and lockers.",
+    "f4t": "Online booking",
+    "f4d": "See free hours in real time and book straight from your phone.",
+    "howTitle": "How to book",
+    "how1t": "Pick a day",
+    "how1d": "See availability for the next 30 days.",
+    "how2t": "Pick time & duration",
+    "how2d": "1 hour minimum, then in 30-minute steps.",
+    "how3t": "Confirm by email",
+    "how3d": "You get a confirmation link. Pay on site.",
+    "galleryTitle": "Take a look",
+    "galleryAll": "Full gallery",
+    "findUs": "Find us",
+    "callUs": "Prefer the phone? Call us"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "The pitch, changing rooms and lounge. Tap a photo to enlarge it."
+  },
+  "book": {
+    "title": "Book the pitch",
+    "subtitle": "Pick a day, a start time and how long you want to play.",
+    "step1": "Day",
+    "step2": "Start time",
+    "step3": "Duration",
+    "step4": "Your details",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "closed": "Closed on this day.",
+    "noSlots": "No free hours left on this day. Try another day.",
+    "loading": "Loading…",
+    "pickTimeFirst": "Pick a start time first.",
+    "until": "until {time}",
+    "legendFree": "Free",
+    "legendTaken": "Taken",
+    "name": "Full name",
+    "email": "Email",
+    "emailHint": "We'll send the confirmation link here.",
+    "phone": "Phone",
+    "note": "Message (optional)",
+    "notePlaceholder": "E.g. we're 10 players, we need bibs",
+    "summary": "Summary",
+    "total": "Estimated total",
+    "payOnSite": "Pay on site, cash or card.",
+    "submit": "Book",
+    "submitting": "Sending…",
+    "successTitle": "Check your email! 📩",
+    "successText": "We sent a confirmation link to {email}. Your booking is final only after you click it. We hold the pitch for you for {minutes} minutes.",
+    "successAgain": "Make another booking",
+    "errors": {
+      "INVALID": "Please check your details (name, email, phone).",
+      "SLOT_TAKEN": "Sorry, that time was just taken. Please pick another one.",
+      "OUT_OF_RANGE": "That date isn't available for booking.",
+      "TOO_MANY_ACTIVE": "You already have the maximum number of active bookings. Call us for more.",
+      "RATE_LIMITED": "Too many attempts. Try again in an hour or give us a call.",
+      "CAPTCHA": "Anti-bot check failed. Reload the page and try again.",
+      "UNKNOWN": "Something went wrong. Please try again."
+    }
+  },
+  "confirm": {
+    "CONFIRMED": "Booking confirmed!",
+    "CONFIRMED_text": "See you on the pitch. We emailed you the details and a cancellation link.",
+    "ALREADY": "Booking was already confirmed",
+    "ALREADY_text": "All good, see you there.",
+    "EXPIRED": "Link expired",
+    "EXPIRED_text": "The booking wasn't confirmed in time and the slot was released. You can make a new booking.",
+    "NOT_FOUND": "Invalid link",
+    "NOT_FOUND_text": "We couldn't find this booking.",
+    "backHome": "Back home",
+    "bookAgain": "Book again"
+  },
+  "cancel": {
+    "title": "Cancel booking",
+    "question": "Are you sure you want to cancel this booking?",
+    "confirmBtn": "Yes, cancel",
+    "keep": "No, keep it",
+    "CANCELLED": "Booking cancelled",
+    "CANCELLED_text": "The slot has been released. Hope to see you another time!",
+    "ALREADY": "Booking was already cancelled",
+    "PAST": "This booking is in the past and can't be cancelled.",
+    "NOT_FOUND": "Invalid link or booking not found."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "hours": "Opening hours",
+    "everyDay": "Every day"
+  },
+  "days": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  }
+}
