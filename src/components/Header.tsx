@@ -13,10 +13,10 @@ export async function Header() {
           <Logo />
         </Link>
         <nav className="flex items-center gap-1 sm:gap-3 text-sm font-semibold">
-          <Link href="/gallery" className="hidden rounded-lg px-3 py-2 text-muted hover:text-text sm:block">
+          <Link href="/gallery" className="hidden min-w-[5.5rem] rounded-lg px-3 py-2 text-center text-muted hover:text-text sm:block">
             {t("gallery")}
           </Link>
-          <Link href="/#contact" className="hidden rounded-lg px-3 py-2 text-muted hover:text-text sm:block">
+          <Link href="/#contact" className="hidden min-w-[5.5rem] rounded-lg px-3 py-2 text-center text-muted hover:text-text sm:block">
             {t("contact")}
           </Link>
           <Suspense>
@@ -24,15 +24,15 @@ export async function Header() {
           </Suspense>
           <Link
             href="/book"
-            className="rounded-full bg-lime px-4 py-2 font-bold text-ink transition hover:bg-lime-dim"
+            className="min-w-[6rem] rounded-full bg-lime px-4 py-2 text-center font-bold text-ink transition hover:bg-lime-dim"
           >
             {t("book")}
           </Link>
         </nav>
       </div>
       <div className="flex justify-center gap-6 border-t border-line/60 py-2 text-sm font-semibold sm:hidden">
-        <Link href="/gallery" className="text-muted">{t("gallery")}</Link>
-        <Link href="/#contact" className="text-muted">{t("contact")}</Link>
+        <Link href="/gallery" className="min-w-[4.5rem] text-center text-muted">{t("gallery")}</Link>
+        <Link href="/#contact" className="min-w-[4.5rem] text-center text-muted">{t("contact")}</Link>
       </div>
     </header>
   );

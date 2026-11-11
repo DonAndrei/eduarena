@@ -14,7 +14,7 @@ export function LocaleSwitch() {
       {(["ro", "en"] as const).map((l) => (
         <button
           key={l}
-          onClick={() => router.replace(qs ? `${pathname}?${qs}` : pathname, { locale: l })}
+          onClick={() => router.replace(qs ? `${pathname}?${qs}` : pathname, { locale: l, scroll: false })}
           className={`rounded-full px-2.5 py-1 uppercase transition ${
             l === locale ? "bg-lime text-ink" : "text-muted hover:text-text"
           }`}

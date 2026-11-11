@@ -34,10 +34,10 @@ export default async function Home({ params }: { params: Promise<{ locale: "ro" 
             <span className="size-1.5 animate-pulse rounded-full bg-lime" />
             {t("eyebrow")}
           </p>
-          <h1 className="mt-6 max-w-3xl whitespace-pre-line font-display text-5xl font-extrabold uppercase leading-[0.95] tracking-tight sm:text-7xl">
+          <h1 className="mt-6 min-h-[3lh] max-w-4xl whitespace-pre-line sm:min-h-[2lh] font-display text-5xl font-extrabold uppercase leading-[0.95] tracking-tight sm:text-7xl">
             {t("title")}
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-text/80">{t("subtitle")}</p>
+          <p className="mt-6 min-h-[4lh] max-w-xl text-lg text-text/80 sm:min-h-[3lh]">{t("subtitle")}</p>
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <Link
               href="/book"
